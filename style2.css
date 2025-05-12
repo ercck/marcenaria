@@ -1,0 +1,331 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+/* Estilos do Header (Hero Section) */
+.hero {
+    background-color: #222;
+    color: #fff;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.hero .tagline {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.hero .button {
+    display: inline-block;
+    background-color: #a87900; /* Ouro Envelhecido */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .button:hover {
+    background-color: #8c6500;
+}
+
+.hero-image {
+    max-width: 1200px;
+    margin-right: 20px;
+}
+
+/* Estilos da Seção "Sobre" */
+#sobre {
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content .lead {
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilos da Seção "Produtos" (Showcase) */
+#produtos {
+    background-color: #292929;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.produto-card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+.produto-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.produto-card h3 {
+    padding: 20px;
+    margin: 0;
+    font-size: 1.8em;
+    color: #eee;
+}
+
+.produto-card p {
+    padding: 0 20px 20px;
+    color: #ccc;
+}
+
+.produto-card .button {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #a87900;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.produto-card .button:hover {
+    background-color: #8c6500;
+}
+
+.cta-produtos {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 60px;
+    color: #ddd;
+}
+
+/* Estilos da Seção "Benefícios" (Destaque) */
+#beneficios {
+    background-color: #f0f0f0;
+    padding: 80px 0;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.lista-beneficios li {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista-beneficios i {
+    font-size: 2em; /* Adicione estilos de ícones aqui se estiver usando uma biblioteca de ícones */
+    color: #a87900;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.lista-beneficios h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.lista-beneficios p {
+    color: #777;
+}
+
+/* Estilos da Seção "Contato" */
+#contato {
+    background-color: #333;
+    color: #fff;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-wrapper {
+    max-width: 500px;
+    text-align: center;
+}
+
+.form-wrapper .form-description {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #eee;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .button {
+    display: block;
+    width: 100%;
+    background-color: #a87900;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+}
+
+.contact-form .button:hover {
+    background-color: #8c6500;
+}
+
+.info-contato {
+    max-width: 400px;
+    text-align: left;
+    color: #ddd;
+}
+
+.info-contato h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.info-contato p {
+    margin-bottom: 15px;
+}
+
+.info-contato i {
+    margin-right: 10px;
+    color: #a87900;
+}
+
+/* Estilos do Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+footer .container {
+    max-width: 960px;
+}
+
+/* Cores Temáticas (Ouro Envelhecido e Tons Escuros) */
+.primary {
+    background-color: #a87900;
+}
+
+.primary:hover {
+    background-color: #8c6500;
+}
+
+.secondary {
+    background-color: #555;
+}
+
+.secondary:hover {
+    background-color: #444;
+}
+
+.contrast {
+    background-color: #eee;
+    color: #444;
+}
+
+.contrast .section-title {
+    color: #a87900;
+    margin-left: 23%;
+}
+
+.destaque {
+    background-color: #f5f5f5;
+}
+
+.call-to-action {
+    background-color: #c09928;
+}
+
